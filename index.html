@@ -17,37 +17,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light pt-4 pb-3">
-        <div class="container">
-          <a class="navbar-brand" href="https://fontmeme.com/permalink/210120/1f5d68cbb1948c15199a89988d486696.png"><img src="https://fontmeme.com/permalink/210120/1f5d68cbb1948c15199a89988d486696.png" alt="logo" width="60%"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-link" target="_blank" href="https://github.com/karljasen28" title="https://github.com/karljasen28"><img src="img/github-sign.svg" alt="github svg icon" width="30vw"></a>
-              <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/karl-jasen-tapangan-842418182/" title="https://www.linkedin.com/in/karl-jasen-tapangan-842418182/"><img src="img/linkedin.svg" alt="linkedin svg icon" width="30vw"></a>
-              <a class="nav-link" target="_blank" href="https://www.facebook.com/karljasen.toraham/" title="https://www.facebook.com/karljasen.toraham/"><img src="img/facebook.svg" alt="linkedin svg icon" width="30vw"></a>
-              <a class="nav-link" target="_blank" href="https://www.instagram.com/jasen.karl/" title="https://www.instagram.com/jasen.karl/"><img src="img/instagram.svg" alt="linkedin svg icon" width="30vw"></a>
+    <nav class="navbar navbar-expand-sm navbar-light pt-4 pb-3">
+        <div class="container col-lg-10 col-md-11 col-sm-12">
+            <a class="navbar-brand" id="navbar-brand" href="#home"><img src="https://fontmeme.com/permalink/210120/1f5d68cbb1948c15199a89988d486696.png" alt="logo" width="40%"></a>
+            <div class="navbar-nav ml-auto" id="navbar-nav">
+                <a class="nav-link" target="_blank" href="https://github.com/karljasen28" title="https://github.com/karljasen28"><img src="img/github-sign.svg" alt="github svg icon" width="30vw"></a>
+                <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/karl-jasen-tapangan-842418182/" title="https://www.linkedin.com/in/karl-jasen-tapangan-842418182/"><img src="img/linkedin.svg" alt="linkedin svg icon" width="30vw"></a>
+                <a class="nav-link" target="_blank" href="https://www.facebook.com/karljasen.toraham/" title="https://www.facebook.com/karljasen.toraham/"><img src="img/facebook.svg" alt="linkedin svg icon" width="30vw"></a>
+                <a class="nav-link" target="_blank" href="https://www.instagram.com/jasen.karl/" title="https://www.instagram.com/jasen.karl/"><img src="img/instagram.svg" alt="linkedin svg icon" width="30vw"></a>
             </div>
-          </div>
         </div>
     </nav>
 
-    <header class="container-fluid" style="margin-top: 4vw;">
+    <header class="container-fluid" style="margin-top: 4vw;" id="home">
         <div class="container">
             <div class="row" style="display: flex; align-items: center; justify-content: center;">
-                <div class="col-lg-6 col-md-4 col-sm-6">
+                <div class="col-lg-6 col-md-4 col-sm-0" id="header-img">
                     <img class="myslides" src="img/karl-04.png" alt="heading photo" width="90%">
                     <img class="myslides" src="img/karl-03.png" alt="heading photo" width="90%">
                     <img class="myslides" src="img/header-photo.png" alt="heading photo" width="90%">
                 </div>
-                <div class="col-lg-6 col-md-8">
-                    <p class="std-r" style="font-size: 2.3vw;">Hi I'm Karl Jasen</p>
-                    <p class="std-b typewrite" style="font-size: 2.7vw;color: dodgerblue;" data-period="1000" data-type='["Web Developer", "Front-End Developer", "Back-End Developer", "Software Development"]'></p>
-                    <p class="std-r" style="font-size: 2vw;">Professional.</p>
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <h2 class="std-r">Hi I'm Karl Jasen</h2>
+                    <h1 class="std-b typewrite" style="color: dodgerblue;" data-period="1000" data-type='["Web Developer", "Front-End Developer", "Back-End Developer", "Software Development"]'></h1>
+                    <h3 class="std-r">Professional.</h3>
                     <p class="std-r" style="line-height: 1.5rem;">
-                        Perfection is achieved not when there is nothing more to add, <br>
+                        Perfection is achieved not when there is nothing more to add,
                         but rather when there is nothing more to take away.</p>
                     <a class="btn btn-design" href="#web-projects">My Projects</a>
                 </div>
@@ -60,7 +55,7 @@
         <!-- Front-End Section -->
         <section class="container-fluid py-5" style="background-color: #E6DACF;">
             <div class="container">
-                <p class="std-b text-center pb-5" style="font-size: 2vw;">Front-End Development</p>
+                <h2 class="std-b text-center pb-5" style="font-size: 2vw;">Front-End Development</h2>
                 <div class="row" style="display: flex; align-items:flex-start; justify-content:center;">
                     <div class="col-6">
                         <br>
@@ -101,7 +96,7 @@
         <!-- Back-end Section -->
         <section class="container-fluid py-5">
             <div class="container">
-                <p class="std-b text-center pb-5" style="font-size: 2vw;">Back-End Development</p>
+                <h2 class="std-b text-center pb-5" style="font-size: 2vw;">Back-End Development</h2>
                 <div class="row" style="display: flex; align-items: center; justify-content: center;">
                     <div class="col-6">
                         <img src="img/back-end.png" alt="back-end photo" width="85%">
@@ -195,7 +190,7 @@
         </section>
 
         <!-- Software Development section -->
-        <section class="container-fluid py-5">
+        <section class="container-fluid py-5" id="software-dev">
             <div class="container">
                 <p class="std-b text-center m-0" style="font-size: 2vw;">Languages and Frameworks</p>
                 <p class="std-r text-center" style="font-size: 1.1vw;">
@@ -208,16 +203,16 @@
                 <p class="std-b text-center" style="font-size: 1.3vw;">Knowledgeable in following area</p>
                 <div class="p-4"></div>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-8 col-xs-12">
                         <img src="img/angular.jpg" alt="languages and frameworks" width="50%">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-8 col-xs-12">
                         <img src="img/ajax.svg" alt="languages and frameworks" width="60%">
                     </div>
-                    <div class="col-lg-3">
-                        <img src="img/react.png" alt="languages and frameworks" width="50%">
+                    <div class="col-lg-3 col-md-3 col-sm-8 col-xs-12">
+                        <img src="img/Group 4.svg" alt="languages and frameworks" width="50%">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3 col-sm-8 col-xs-12">
                         <img src="img/wordpress.png" alt="languages and frameworks" width="70%">
                     </div>
                 </div>
@@ -225,7 +220,7 @@
         </section>
 
         <!-- Know more about me section -->
-        <section class="container-fluid" style="background-color: #E6DACF;">
+        <section class="container-fluid" style="background-color: #E6DACF;" id="contact">
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-lg-6 px-5">
@@ -294,64 +289,64 @@
 </script>
 
 
-  <script>
-      $(document).ready(function() {
+<script>
+    $(document).ready(function() {
         $(".preview-project").hide();
-        $("#project-container-1").hover(function() {
-            $("#preview-project-1").fadeIn()
-        }, function() {
-            $("#preview-project-1").fadeOut()
-        });
+            $("#project-container-1").hover(function() {
+                $("#preview-project-1").fadeIn()
+            }, function() {
+                $("#preview-project-1").fadeOut()
+            });
         
       });
       
-      $(document).ready(function() {
+    $(document).ready(function() {
         $(".preview-project").hide();
-        $("#project-container-2").hover(function() {
-            $("#preview-project-2").fadeIn()
-        }, function() {
-            $("#preview-project-2").fadeOut()
-        });
+            $("#project-container-2").hover(function() {
+                $("#preview-project-2").fadeIn()
+            }, function() {
+                $("#preview-project-2").fadeOut()
+            });
         
       }); 
 
-      $(document).ready(function() {
+    $(document).ready(function() {
         $(".preview-project").hide();
-        $("#project-container-3").hover(function() {
-            $("#preview-project-3").fadeIn()
-        }, function() {
-            $("#preview-project-3").fadeOut()
-        });
+            $("#project-container-3").hover(function() {
+                $("#preview-project-3").fadeIn()
+            }, function() {
+                $("#preview-project-3").fadeOut()
+            });
         
       }); 
 
-      $(document).ready(function() {
+    $(document).ready(function() {
         $(".preview-project").hide();
-        $("#project-container-4").hover(function() {
-            $("#preview-project-4").fadeIn()
-        }, function() {
-            $("#preview-project-4").fadeOut()
-        });
+            $("#project-container-4").hover(function() {
+                $("#preview-project-4").fadeIn()
+            }, function() {
+                $("#preview-project-4").fadeOut()
+            });
         
       }); 
 
-      $(document).ready(function() {
+    $(document).ready(function() {
         $(".preview-project").hide();
-        $("#project-container-5").hover(function() {
-            $("#preview-project-5").fadeIn()
-        }, function() {
-            $("#preview-project-5").fadeOut()
-        });
+            $("#project-container-5").hover(function() {
+                $("#preview-project-5").fadeIn()
+            }, function() {
+                $("#preview-project-5").fadeOut()
+            });
         
       }); 
 
-      $(document).ready(function() {
+    $(document).ready(function() {
         $(".preview-project").hide();
-        $("#project-container-6").hover(function() {
-            $("#preview-project-6").fadeIn()
-        }, function() {
-            $("#preview-project-6").fadeOut()
-        });
+            $("#project-container-6").hover(function() {
+                $("#preview-project-6").fadeIn()
+            }, function() {
+                $("#preview-project-6").fadeOut()
+            });
         
       }); 
   </script>
