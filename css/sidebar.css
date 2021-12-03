@@ -1,0 +1,86 @@
+/* sidebar navigation */
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 13vw;
+    height: 100vh;
+    padding: 30px 2.5vw 0px;
+    border-right: 1px solid #1d1d22;
+    background-color: #ffffff;
+}
+.logo-title {
+    font-weight: 700;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.sidebar ul li {
+    list-style: none;
+    padding: 0.8rem 0;
+}
+
+.menu {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.menu:hover {
+    color: #4353FF;
+}
+
+hr {margin-bottom: 25px;}
+
+/* .search-form {
+
+} */
+label {
+    font-size: 0.8rem;
+}
+.input-field {
+    width: 94%;
+    padding: 15px 5px 15px 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.social-network {
+    padding-top: 50%;
+}
+.btn-resume {
+    border: none;
+    background-color: #4353FF;
+    padding: 15px 0;
+    width: 100%;
+}
+.btn-resume:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-resume a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.social-desc {
+    font-size: 0.8rem;
+}
+.social-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.social-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%;
+    flex: 1;
+}

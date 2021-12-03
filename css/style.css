@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url('sidebar.css');
+@import url('foundation.css');
+@import url('technical-skills.css');
+@import url('featured-projects.css');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+   position: relative; 
+   width: 100%;
+}
+
+/* main content */
+main {
+    position: relative;
+    top: 0;
+    left: 18vw;
+    width: calc(100vw - 20%);
+}
+
+.section-title {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #1d1d22;
+}
+
+@media only screen and (min-width: 1220px) {
+    .not-available {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1219px) {
+    .wrapper {
+        display: none;
+        visibility: hidden;
+    }
+
+    .not-available {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1d1d22;
+        height: 100vh;
+    }
+
+    .not-available img {
+        display: inline-block;
+    }
+
+    .not-available h1 {
+        font-size: 1.875rem;
+    }
+}
