@@ -1,392 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Karl Jasen Tapangan Web Portfolio">
-    <meta name="keywords" content="karl jasen">
-    <meta name="author" content="Karl Jasen Tapangan">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>KJT - Web Portfolio</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/karl-05.png" type="image/x-icon">
+   <meta charset="UTF-8">
+   <meta name="description" content="Karl Jasen Tapangan Web Portfolio">
+   <meta name="keywords" content="karl jasen">
+   <meta name="author" content="Karl Jasen Tapangan">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Karl Jasen - Web Portfolio</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar"> 
-            <h3 class="logo-title">Toshiro's Portfolio</h3>
-            <ul>
-                <li><a class="menu" href="#foundation">Foundation</a></li>
-                <li><a class="menu" href="#technical-skills">Technical Skills</a></li>
-                <li><a class="menu" href="#featured-projects">Featured Projects</a></li>
-                <li><a class="menu" href="#work-experience">Work Experience</a></li>
-                <li><a class="menu" href="#contact-me">Contact Me</a></li>
-            </ul>
+<main>
+<!-- <header>
+   <ul class="nav-item">
+      <li class="nav-link"><a href="#">FOUNDATION</a></li>
+      <li class="nav-link"><a href="#">SKILLS</a></li>
+      <li class="nav-link"><a href="#">PROJECTS</a></li>
+      <li class="nav-link"><a href="#">EXPERIENCE</a></li>
+      <li class="nav-link"><a href="#">CONTACT ME</a></li>
+   </ul>
+</header> -->
 
-            <hr>
+<div id="banner" class="banner">
+   <div class="banner-content">
+      <h1>WEB DEVELOPER</h1>
+      <p>HELLO I'M KARL A SIMPLE NERD WHO LIKES TO CODE FOR LIVING</p>
+   </div>
+</div>
 
-            <div class="search-form">
-                <form action="" method="">
-                    <label for="search">Explore more</label>
-                    <input class="input-field" id="search" type="text" placeholder="Search something here...">
-                </form>
-            </div>
+<div id="main-skills" class="section">
+   <div class="section-row">
+      <div class="section-col">
+         <h2 class="section-title">FRONT-END <br> DEVELOPMENT</h2>
+         <p class="section-description">
+            A front-end developer builds the front-end portion of websites and web applications—that is, 
+            the part that users actually see and interact with. A front-end developer creates websites and 
+            applications using web languages such as HTML, CSS, and JavaScript allow users to access and 
+            interact with the site or app
+         </p>
+      </div>
+      <div class="section-col" style="align-items: flex-end;">
+         <img src="images/front.jpg" alt="front-end photo" width="600">
+      </div>
+   </div>
 
+   <div class="row-gap"><hr></div>
 
-            <div class="social-network">
-                <button class="btn-resume"><a href="#resume">My Resume</a></button>
-                <p class="social-desc">Social Network</p>
-                <div class="social-row">
-                    <div class="social-column">
-                        <a href="#"><img src="images/twitter.svg" alt="" width="25"></a>
-                    </div>
-                    <div class="social-column">
-                        <a href="#"><img src="images/linkedin.svg" alt="" width="25"></a>
-                    </div>
-                    <div class="social-column">
-                        <a href="#"><img src="images/instagram.svg" alt="" width="32"></a>
-                    </div>
-                    <div class="social-column">
-                        <a href="#"><img src="images/facebook.svg" alt="" width="25"></a>
-                    </div>
-                </div>
-            </div>
+   <div class="section-row">
+      <div class="section-col" style="align-items: flex-start;">
+         <img src="images/back.jpg" alt="back-end photo" width="600">
+      </div>
+      <div class="section-col">
+         <h2 class="section-title">BACK-END <br> DEVELOPMENT</h2>
+         <p class="section-description">
+            A front-end developer builds the front-end portion of websites and web applications—that is, 
+            the part that users actually see and interact with. A front-end developer creates websites and 
+            applications using web languages such as HTML, CSS, and JavaScript allow users to access and 
+            interact with the site or app
+         </p>
+      </div>
+   </div>
+</div>
 
-        </div>
+<div id="list-skills" class="section">
+   <h2 class="section-title">DEVELOPMENT SKILLS</h2>
+   <div class="section-row" style="margin-top: 3%;">
+      <div class="section-col">
+         <h3 class="section-subtitle">HTML5</h3>
+         <p class="section-description">Hyper Text Markup Language</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">CSS3 / SASS</h3>
+         <p class="section-description">Styling sheets used web pages</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">Bootstrap</h3>
+         <p class="section-description">CSS library</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">JavaScript / jQuery</h3>
+         <p class="section-description">Create interactive web content</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">AngularJS</h3>
+         <p class="section-description">JavaScript framework</p>
+      </div>
+   </div>
+   <div class="section-row" style="margin-top: 2%;">
+      <div class="section-col">
+         <h3 class="section-subtitle">PHP</h3>
+         <p class="section-description">Server-side language</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">WordPress</h3>
+         <p class="section-description">Content Management System</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">MySQL</h3>
+         <p class="section-description">Structured database system</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">Google Firebase</h3>
+         <p class="section-description">Realtime NoSQL database</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">Github / Gitlab</h3>
+         <p class="section-description">Version control using Git</p>
+      </div>
+   </div>
 
-        <main class="content">
-            <section class="foundation" id="foundation">
-                <p class="section-title">Foundation</p>
-                <br>
-                <div class="foundation-row">
-                    <div class="foundation-column" style="flex: 1.5;">
-                        <h3 class="foundation-name">Hi I'm Karl Jasen Tapangan</h3>
-                        <h2 class="typewrite" data-period="1000" data-type='["Web Developer ", "Front-end Developer ", "Back-end Developer "]'></h2>
-                        <p class="foundation-quote">
-                            Perfection is achieved not when there is nothing more to add, <br>
-                            but rather when there is nothing more to take away.
-                        </p>
-                        <a class="know-more" href="#contact-me">Know More</a>
-                    </div>
-                    <div class="foundation-column">
-                        <img src="images/banner.png" alt="Featured banner coding guy" width="95%">
-                    </div>
-                </div>
-            </section>
+   <div class="row-gap"><hr></div>
 
-            <section class="technical-skills" id="technical-skills">
-                <p class="section-title">Technical Skills</p>
-                <br>
-                <div class="techinical-skills_inner">
-                    <h3 class="technical-skills_title">Front-end skills</h3>
-                    <div class="technical-skills_row">
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">HTML5</h3>
-                            <p class="skill-description">Hyper Text Markup Language</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">CSS3</h3>
-                            <p class="skill-description">Cascading Style Sheets</p>
-                            <br>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">JS</h3>
-                            <p class="skill-description">JavaScript</p>
-                            <br>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">SASS</h3>
-                            <p class="skill-description">Syntactically Awesome Style Sheets</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                    </div>
+   <h2 class="section-title" style="text-align: center; color: #fff; margin-top: 0;">MORE SKILLS</h2>
+   <div class="section-row" style="margin-top: 3%;">
+      <div class="section-col">
+         <h3 class="section-subtitle">Adobe XD</h3>
+         <p class="section-description">Designing tool | Windows & MacOS</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">Sketch</h3>
+         <p class="section-description">Designing tool | MacOS</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">SEO</h3>
+         <p class="section-description">Search Engine Optimization</p>
+      </div>
+   </div>
+   <div class="section-row" style="margin-top: 2%;">
+      <div class="section-col">
+         <h3 class="section-subtitle">React.js</h3>
+         <p class="section-description">Learning more</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">React-Native</h3>
+         <p class="section-description">Learning more</p>
+      </div>
+      <div class="section-col">
+         <h3 class="section-subtitle">Node.js</h3>
+         <p class="section-description">Learning more</p>
+      </div>
+   </div>
+</div>
 
-                    <div class="technical-skills_row">
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">Bootstrap</h3>
-                            <p class="skill-description">HTML, CSS & JS Library</p>
-                            <br>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">jQuery</h3>
-                            <p class="skill-description">jQuery - JavaScript library</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">AngularJS</h3>
-                            <p class="skill-description">AngularJS - JavaScript Framework</p>
+<div id="projects" class="section">
+   <h2 class="section-title">PROJECT DEVELOPMENT</h2>
+   <p class="section-description">Developing website and landing page projects from scratch and doing maintenance work to insure systems functionality is up to date</p>
+   <div class="section-row" style="margin-top: 3%;">
+      <div class="section-col">
+         <a href="http://sitebeat.com/" target="_blank"><img class="slide-top" src="images/sitebeat.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="https://www.crazydomains.com/learn/" target="_blank"><img class="slide-top" src="images/cd-blog.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="https://www.freeparking.co.nz/learn/" target="_blank"><img class="slide-top" src="images/freeparking.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="https://help.vodien.com/" target="_blank"><img class="slide-top" src="images/help-vodien.png" alt="" width="100%"></a>
+      </div>
+   </div>
 
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column" style="visibility: hidden;"></div>
-                    </div>
-                </div>
+   <div class="row-gap"><hr></div>
 
-                <div class="techinical-skills_inner">
-                    <h3 class="technical-skills_title">Back-end skills</h3>
-                    <div class="technical-skills_row">
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">PHP</h3>
-                            <p class="skill-description">Personal Home Page</p>
-                            <br>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">SQL</h3>
-                            <p class="skill-description">Structured Query Language</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">MySQL</h3>
-                            <p class="skill-description">Database Management System</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">Google Firebase</h3>
-                            <p class="skill-description">Development Platform</p>
-                            <br>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+   <div class="section-row">
+      <div class="section-col">
+         <a href="https://www.vodien.com/learn/wordpress-design/" target="_blank"><img class="slide-top" src="images/vodien-wp.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="https://www.vodien.com/learn/managed-mseo/" target="_blank"><img class="slide-top" src="images/vodien-seo.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="https://www.vodien.com/learn/managed-mseo/" target="_blank"><img class="slide-top" src="images/Forrestfield.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="#" target="_blank"><img class="slide-top" src="images/psm.png" alt="" width="100%"></a>
+      </div>
+   </div>
 
-                <div class="techinical-skills_inner">
-                    <h3 class="technical-skills_title">Other technical skills</h3>
-                    <div class="technical-skills_row">
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">WordPress</h3>
-                            <p class="skill-description">Content Management System</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">SEO</h3>
-                            <p class="skill-description">Search Engine Optimization</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">Adobe XD</h3>
-                            <p class="skill-description">Design tool for web & mobile</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">Sketch</h3>
-                            <p class="skill-description">Design tool for MacOS</p>
-                            <br>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot2"></span>
-                                <span class="dot2"></span>
-                            </div>
-                        </div>
-                    </div>
+   <div class="row-gap"><hr></div>
 
-                    <div class="technical-skills_row">
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">GitHub</h3>
-                            <p class="skill-description">Version Control Management</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">GitLab</h3>
-                            <p class="skill-description">Version Control Management</p>
-                            <p>Mastery level</p>
-                            <div class="col-dot">
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                                <span class="dot1"></span>
-                            </div>
-                        </div>
-                        <div class="technical-skills_column" style="visibility: hidden;"></div>
-                        <div class="technical-skills_column" style="visibility: hidden;"></div>
-                    </div>
-                </div>
+   <div class="section-row">
+      <div class="section-col">
+         <a href="#" target="_blank"><img class="slide-top" src="images/project-1.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="#" target="_blank"><img class="slide-top" src="images/project-2.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="#" target="_blank"><img class="slide-top" src="images/project-3.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="#" target="_blank"><img class="slide-top" src="images/project-4.png" alt="" width="100%"></a>
+      </div>
+   </div>
 
-                <div class="techinical-skills_inner">
-                    <h3 class="technical-skills_title">Learning more about</h3>
-                    <div class="technical-skills_row">
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">React</h3>
-                            <p class="skill-description">JavaScript UI library</p>
-                            <br>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">React-Native</h3>
-                            <p class="skill-description">Mobile development framework</p>
-                        </div>
-                        <div class="technical-skills_column">
-                            <h3 class="skill-title">Node.js</h3>
-                            <p class="skill-description">JavaScript Back-end framework</p>
-                        </div>
-                        <div class="technical-skills_column" style="visibility: hidden;"></div>
-                    </div>
-                </div>
-            </section>
+   <div class="row-gap"><hr></div>
 
-            <section class="featured-projects" id="featured-projects">
-                <p class="section-title">Featured Projects</p>
-                <br>
-                <div class="featured-projects_inner">
-                    <h3 class="feature-projects_heading">Project development</h3>
-                    
-                    <div class="featured-projects_row">
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="http://sitebeat.com/" target="_blank"><img class="slide-top" src="images/sitebeat.png" alt="" width="100%"></a>
-                        </div>
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="https://www.crazydomains.com/learn" target="_blank"><img class="slide-top" src="images/cd-blog.png" alt="" width="100%"></a>
-                        </div>
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="https://help.vodien.com/" target="_blank"><img class="slide-top" src="images/help-vodien.png" alt="" width="100%"></a>
-                        </div>
-                    </div>
-
-                    <div class="featured-projects_row">
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="#" target="_blank"><img class="slide-top" src="images/project-1.png" alt="" width="100%"></a>
-                        </div>
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="#" target="_blank"><img class="slide-top" src="images/project-2.png" alt="" width="100%"></a>
-                        </div>
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="#" target="_blank"><img class="slide-top" src="images/project-3.png" alt="" width="100%"></a>
-                        </div>
-                    </div>
-
-                    <div class="featured-projects_row">
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="#" target="_blank"><img class="slide-top" src="images/project-4.png" alt="" width="100%"></a>
-                        </div>
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="#" target="_blank"><img class="slide-top" src="images/project-5.png" alt="" width="100%"></a>
-                        </div>
-                        <div class="featured-projects_column" title="Click to view website">
-                            <a href="#" target="_blank"><img class="slide-top" src="images/project-6.png" alt="" width="100%"></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <div class="not-available">
-        <img src="images/sad-sorry.gif" alt="">
-        <h1>this view is not yet available.</h1>
-    </div>
-<script src="js/typewrite.js"></script>
+   <div class="section-row">
+      <div class="section-col">
+         <a href="#" target="_blank"><img class="slide-top" src="images/project-5.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col">
+         <a href="#" target="_blank"><img class="slide-top" src="images/project-6.png" alt="" width="100%"></a>
+      </div>
+      <div class="section-col" style="visibility: hidden;">
+      </div>
+      <div class="section-col" style="visibility: hidden;">
+      </div>
+   </div>
+</div>
+</main>
 </body>
 </html>
