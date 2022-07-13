@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="description" content="Karl Jasen Tapangan Web Portfolio">
-   <meta name="keywords" content="karl jasen">
-   <meta name="author" content="Karl Jasen Tapangan">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Karl Jasen - Web Portfolio</title>
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="shortcut icon" href="images/karl-03.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="description" content="Karl Jasen Tapangan Web Portfolio">
+<meta name="keywords" content="karl jasen">
+<meta name="author" content="Karl Jasen Tapangan">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karl Jasen - Web Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/karl-03.png" type="image/x-icon">
+<style>
+   .slide-top:hover {
+   -webkit-animation: slide-top 3s ease-in forwards ;
+   animation: slide-top 3s ease-in forwards ;
+   opacity: 0.8;
+   cursor: pointer;
+   }
+
+   @-webkit-keyframes slide-top {
+      0% {
+         -webkit-transform: translateY(0);
+               transform: translateY(0);
+      }
+      100% {
+         -webkit-transform: translateY(-50%);
+               transform: translateY(-50%);
+      }
+   }
+   @keyframes slide-top {
+      0% {
+         -webkit-transform: translateY(0);
+               transform: translateY(0);
+      }
+      100% {
+         -webkit-transform: translateY(-50%);
+               transform: translateY(-50%);
+      }
+   }
+
+   .resume {
+      font-size: 15px;
+      font-weight: 500;
+      width: fit-content;
+      background-color: none;
+      color: #000;
+      border: 1.5px solid #0C0C0C;
+      text-decoration: none;
+      padding: 10px 30px;
+      margin-top: 30px;
+      transition: .3s;
+   }
+
+   .resume:hover {
+      font-weight: 400;
+      color: #fff;
+      background-color: #0C0C0C;
+   }
+</style>
 </head>
 <body>
 <main>
@@ -19,7 +67,7 @@
    </div>
 </div>
 
-<div id="main-skills" class="section">
+<div id="development" class="section">
    <div class="section-row">
       <div class="section-col">
          <h2 class="section-title">FRONT-END <br> DEVELOPMENT</h2>
@@ -30,7 +78,7 @@
             interact with the site or app
          </p>
       </div>
-      <div class="section-col" style="align-items: flex-end;">
+      <div class="section-col" style="align-items: center;">
          <img src="images/front.jpg" alt="front-end photo" width="600">
       </div>
    </div>
@@ -38,7 +86,7 @@
    <div class="row-gap"><hr></div>
 
    <div class="section-row">
-      <div class="section-col" style="align-items: flex-start;">
+      <div class="section-col" style="align-items: center;">
          <img src="images/back.jpg" alt="back-end photo" width="600">
       </div>
       <div class="section-col">
@@ -53,7 +101,7 @@
    </div>
 </div>
 
-<div id="list-skills" class="section">
+<div id="skills" class="section">
    <h2 class="section-title">DEVELOPMENT SKILLS</h2>
    <div class="section-row" style="margin-top: 3%;">
       <div class="section-col">
@@ -102,7 +150,7 @@
 
    <div class="row-gap"><hr></div>
 
-   <h2 class="section-title" style="text-align: center; color: #fff; margin-top: 0;">MORE SKILLS</h2>
+   <h2 class="section-title">MORE SKILLS</h2>
    <div class="section-row" style="margin-top: 3%;">
       <div class="section-col">
          <h3 class="section-subtitle">Adobe XD</h3>
@@ -212,15 +260,91 @@
       <div class="section-col">
          <a href="https://en.hipe.asia/" target="_blank"><img src="images/hipe.png" alt="hipe solutions" width="110"></a>
          <h3 class="section-subtitle">Web Developer</h3>
-         <p class="section-description">Nov 2019 - Feb 2021</p>
+         <p class="section-description">November 2019 - February 2021</p>
       </div>
       <div class="section-col">
          <a href="https://www.myoptimind.com/" target="_blank"><img src="images/optimind.png" alt="my optimind" width="350"></a>
          <h3 class="section-subtitle">SEO Specialist - Intern</h3>
-         <p class="section-description">Sept 2018 - March 2019</p>
+         <p class="section-description">October 2018 - May 2019</p>
+      </div>
+   </div>
+</div>
+
+<div id="contact-me" class="section">
+   <div class="section-row">
+      <div class="section-col">
+         <h2 class="section-title">SOCIAL DETAILS</h2>
+         <p class="section-description">
+            For more info follow me on my social accounts, click icon to redirect to my profile. 
+            You can also view or download my online resume, just click the preview button below.
+         </p>
+         <div class="section-inner-row" style="margin-top: 30px;">
+            <div class="section-inner-col">
+               <a href="https://www.linkedin.com/in/karl-jasen-tapangan-842418182/" target="_blank"><img src="images/linkedin.png" alt="linkedin" width="40"></a>
+            </div>
+            <div class="section-inner-col">
+               <a href="https://www.upwork.com/freelancers/~01043eb90cab8ea5da" target="_blank"><img src="images/upwork.png" alt="upwork" width="45"></a>
+            </div>
+            <div class="section-inner-col">
+               <a href="https://www.github.com/karljasen28/" target="_blank"><img src="images/github.png" alt="github" width="40"></a>
+            </div>
+         </div>
+         <a class="resume" href="file/Karl-Jasen-Tapangan-Resume.pdf" target="_blank">PREVIEW RESUME</a>
+      </div>
+      <div class="section-col">
+         <p class="section-description" style="font-size: 16px; font-weight: 400; line-height: 26px; color: #000;">
+            I also do freelancing work for website creation, single landing page portfolio, and website mockup design. 
+            Fill out the form below and I'll reach out to you as soon as possible.
+         </p>
+         <form id="contact-form" class="contact-form" action="https://formspree.io/f/xgedjqea" method="POST">
+            <h3 id="form-status" class="section-subtitle"></h3>
+            <input id="name" class="input-field" type="text" name="name" placeholder="Full Name" style="text-transform: capitalize;" required>
+            <input id="email" class="input-field" type="email" name="email" placeholder="Email" required>
+            <select id="task" class="select-field" name="task">
+               <option hidden>Type of Inquiry</option>
+               <option value="Website Creation">Website Creation</option>
+               <option value="Single Landing Page">Single Landing Page</option>
+               <option value="Website Mockup Design">Website Mockup Design</option>
+            </select>
+            <textarea id="message" class="input-field" name="message" placeholder="Additional instruction or message" cols="30" rows="10"></textarea>
+            <input class="submit-button" type="submit" value="SUBMIT REQUEST">
+         </form>
       </div>
    </div>
 </div>
 </main>
+
+<script>
+   var form = document.getElementById("contact-form");
+   
+   async function handleSubmit(event) {
+     event.preventDefault();
+     var status = document.getElementById("form-status");
+     var data = new FormData(event.target);
+     fetch(event.target.action, {
+       method: form.method,
+       body: data,
+       headers: {
+           'Accept': 'application/json'
+       }
+     }).then(response => {
+       if (response.ok) {
+         status.innerHTML = "Thanks for reaching out, I'll get in touch with you as soon as possible!";
+         form.reset()
+       } else {
+         response.json().then(data => {
+           if (Object.hasOwn(data, 'errors')) {
+             status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+           } else {
+             status.innerHTML = "Oops! There was a problem submitting your form"
+           }
+         })
+       }
+     }).catch(error => {
+       status.innerHTML = "Oops! There was a problem submitting your form"
+     });
+   }
+   form.addEventListener("submit", handleSubmit)
+</script>
 </body>
 </html>
