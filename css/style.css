@@ -781,12 +781,13 @@ hr {
         background-image: url(../images/banner-parallax.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: conta;
+        background-size: cover;
     }
     .banner-content {
         position: relative;
         text-align: center;
         top: 35%;
+        padding: 0 20px;
     }
     .banner-content h1, p {
         margin: 0;
@@ -795,11 +796,13 @@ hr {
     .banner-content h1 {
         font-size: 40px;
         font-weight: 700;
-        margin-bottom: 20px;
+        line-height: 45px;
+        margin-bottom: 10px;
     }
     .banner-content p {
         font-size: 14px;
         font-weight: 400;
+        line-height: 24px;
     }
     .banner-content a {
         font-size: 16px;
@@ -824,7 +827,7 @@ hr {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -841,17 +844,12 @@ hr {
     }
     
     #projects .section-row {
-        width: 90%;
         justify-content: center;
     }
     
     #work-experience .section-row {
         justify-content: center;
         margin-top: 50px;
-    }
-
-    #contact-me .section-row {
-        width: 90%;
     }
     
     .section-col {
