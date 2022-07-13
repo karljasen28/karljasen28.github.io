@@ -303,7 +303,7 @@
             <h3 id="form-status" class="section-subtitle" style="margin-bottom: 0;"></h3>
             <input id="name" class="input-field" type="text" name="name" placeholder="Full Name" style="text-transform: capitalize;" required>
             <input id="email" class="input-field" type="email" name="email" placeholder="Email" required>
-            <select id="inquiry" class="select-field" name="inquiry">
+            <select id="inquiry" class="select-field" name="inquiry" required>
                <option hidden>Type of Inquiry</option>
                <option value="Website Creation">Website Creation</option>
                <option value="Single Landing Page">Single Landing Page</option>
@@ -334,7 +334,7 @@
        }
      }).then(response => {
        if (response.ok) {
-         status.innerHTML = "Thanks for reaching out, I'll get in touch with you as soon as possible!";
+         status.innerHTML = "Thanks for your submission, I'll get in touch with you as soon as possible!";
          form.reset()
        } else {
          response.json().then(data => {
