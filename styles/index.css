@@ -1,0 +1,204 @@
+* { margin: 0; }
+html { scroll-behavior: smooth; }
+
+.flex-row { display: flex; flex-direction: row; flex-wrap: wrap; }
+.flex-column-100 { display: flex; flex-direction: column; width: 100%; }
+.flex-column-80 { display: flex; flex-direction: column; width: 80%; }
+.flex-column-70 { display: flex; flex-direction: column; width: 70%; }
+.flex-column-60 { display: flex; flex-direction: column; width: 60%; }
+.flex-column-50 { display: flex; flex-direction: column; width: 50%; }
+.flex-column-40 { display: flex; flex-direction: column; width: 40%; }
+.flex-column-32 { display: flex; flex-direction: column; width: 32%; }
+.flex-column-30 { display: flex; flex-direction: column; width: 30%; }
+.flex-column-25 { display: flex; flex-direction: column; width: 25%; }
+.flex-column-20 { display: flex; flex-direction: column; width: 20%; }
+
+.content-start { justify-content: flex-start; }
+.content-center { justify-content: center; }
+.content-end { justify-content: end; }
+
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.items-end { align-items: end; }
+
+section { width: 100%; max-width: 1260px; margin: 0 auto; padding: 80px 30px;}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.navlinks {
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    color: #1D262B;
+}
+.navlinks:hover {
+    color: dodgerblue;
+}
+
+.profile {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.socialIcons {
+    width: 50px;
+    margin-right: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    padding: 0;
+}
+.socialIcons:hover {
+    border: 1px solid #1D262B;
+}
+
+.featured-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    column-gap: 2%;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+.featured-projects a {
+    width: 32%;
+    border: none;
+}
+
+.featured-projects a img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+}
+
+.work-image {
+    width: 200px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+}
+.carousel {
+    display: flex;
+    transition: transform 2s linear;
+    -webkit-transition: transform 2s linear;
+}
+.carousel img {
+    width: 180px;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
+    margin: 0 15px;
+}
+
+/* All Projects Page */
+.arrow-left {
+    width: 30px;
+    position: relative;
+    top: 8px;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 20px;
+    border: none;
+    color: #1D262B;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #FFFFFF;
+    color: dodgerblue;
+}
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    column-gap: 2%;
+    row-gap: 30px;
+
+    margin-top: 50px;
+}
+
+.image-list a {
+    width: 32%;
+    border: none;
+}
+
+.image-list a img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    display: none; /* Hide all images initially */
+}
+
+/* table responsive view */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* flex row & column */
+    .flex-column-tb-45 {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    /* index page */
+    .featured-projects a {
+        width: 49%;
+    }
+
+    /* All projects page */
+    .image-list a {
+        width: 49%;
+    }
+}
+
+/* mobile responsive view */
+@media only screen and (max-width: 767px) {
+    /* flex row & column */
+    .flex-row-mb { display: flex; flex-direction: column-reverse; flex-wrap: wrap; row-gap: 20px; }
+    .flex-column-mb-100 { display: flex; flex-direction: column; width: 100%; align-items: start; }
+
+    /* index page */
+    .featured-projects a {
+        width: 100%;
+    }
+
+    /* All projects page */
+    .filter-buttons button {
+        margin-left: 0;
+        padding: 0;
+        margin-right: 40px;
+    }
+    .image-list a {
+        width: 100%;
+    }
+}
