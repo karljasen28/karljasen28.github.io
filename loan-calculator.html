@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karl Shark</title>
   <style>
     body {
@@ -14,7 +15,7 @@
     h1 {
       text-align: center;
       color: #1c2d3a;
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
     .container {
@@ -24,11 +25,13 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-sizing: border-box;
     }
     label {
       display: block;
       margin-top: 10px;
       font-weight: bold;
+      font-size: 1rem;
     }
     input {
       width: 100%;
@@ -61,50 +64,46 @@
       border-radius: 6px;
       font-size: 15px;
     }
-    table {
+    .table-container {
       margin-top: 20px;
+      overflow-x: auto; /* allow horizontal scroll */
+      -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    }
+    table {
       width: 100%;
       border-collapse: collapse;
+      min-width: 600px; /* keeps columns readable, forces scroll on small screens */
     }
     th, td {
       border: 1px solid #ddd;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
+      font-size: 15px;
+      white-space: nowrap; /* no wrapping */
     }
     th {
       background: #e7f0f3;
     }
 
-    /* --- MOBILE RESPONSIVE CARDS --- */
-    @media (max-width: 600px) {
-      table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
+    /* Slightly smaller text on tablets */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.6rem;
       }
-      thead {
-        display: none; /* hide table header */
-      }
-      tr {
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
+      th, td {
+        font-size: 14px;
         padding: 10px;
-        background: #fafafa;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       }
-      td {
-        text-align: left;
+    }
+
+    /* More compact on phones */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+      th, td {
+        font-size: 13px;
         padding: 8px;
-        border: none;
-        display: flex;
-        justify-content: space-between;
-      }
-      td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        flex: 1;
-        padding-right: 10px;
-        color: #1c2d3a;
       }
     }
   </style>
@@ -149,16 +148,14 @@
       }
 
       let table = `
-        <table>
-          <thead>
+        <div class="table-container">
+          <table>
             <tr>
               <th>Term (months)</th>
               <th>Monthly Amortization</th>
               <th>Total Repayment</th>
               <th>Total Interest</th>
             </tr>
-          </thead>
-          <tbody>
       `;
 
       for (let t = 1; t <= 12; t++) {
@@ -168,15 +165,15 @@
 
         table += `
           <tr>
-            <td data-label="Term (months)">${t}</td>
-            <td data-label="Monthly Amortization">₱${formatNumber(monthly.toFixed(2))}</td>
-            <td data-label="Total Repayment">₱${formatNumber(total.toFixed(2))}</td>
-            <td data-label="Total Interest">₱${formatNumber(interest.toFixed(2))}</td>
+            <td>${t}</td>
+            <td>₱${formatNumber(monthly.toFixed(2))}</td>
+            <td>₱${formatNumber(total.toFixed(2))}</td>
+            <td>₱${formatNumber(interest.toFixed(2))}</td>
           </tr>
         `;
       }
 
-      table += "</tbody></table>";
+      table += "</table></div>";
 
       document.getElementById('output').innerHTML = `
         <div class="result">
