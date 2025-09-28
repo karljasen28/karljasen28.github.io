@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Karl Shark </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      margin: 0;
+      padding: 20px;
+      color: #2a363d;
+    }
+    h1 {
+      text-align: center;
+      color: #1c2d3a;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input {
+      width: 250px;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      background: #e8b227;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #d69f14;
+    }
+    table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #e7f0f3;
+    }
+    .result {
+      margin-top: 15px;
+      padding: 12px;
+      background: #f4f4f4;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🦈 Karl The Loan Shark 🦈</h1>
+  <div class="container">
+    <label>Loan Amount (₱)</label>
+    <input type="text" id="amount" value="100,000">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script>
+    // backend adjustable monthly interest rate
+    const monthlyRate = 0.03; // 1.20%
+
+    // format number with commas
+    function formatNumber(num) {
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    // remove commas from input
+    function parseNumber(str) {
+      return parseFloat(str.replace(/,/g, "")) || 0;
+    }
+
+    // auto-format input with commas
+    const amountInput = document.getElementById('amount');
+    amountInput.addEventListener('input', () => {
+      let raw = parseNumber(amountInput.value);
+      amountInput.value = raw ? formatNumber(raw) : "";
+    });
+
+    function calculate() {
+      let P = parseNumber(document.getElementById('amount').value);
+      if (!P) {
+        document.getElementById('output').innerHTML = `<div class="result">Enter a valid loan amount.</div>`;
+        return;
+      }
+
+      let table = `
+        <table>
+          <tr>
+            <th>Term (months)</th>
+            <th>Monthly Amortization</th>
+            <th>Total Repayment</th>
+            <th>Total Interest</th>
+          </tr>
+      `;
+
+      for (let t = 1; t <= 12; t++) {
+        let interest = P * monthlyRate * t;
+        let total = P + interest;
+        let monthly = total / t;
+
+        table += `
+          <tr>
+            <td>${t}</td>
+            <td>₱${formatNumber(monthly.toFixed(2))}</td>
+            <td>₱${formatNumber(total.toFixed(2))}</td>
+            <td>₱${formatNumber(interest.toFixed(2))}</td>
+          </tr>
+        `;
+      }
+
+      table += "</table>";
+
+      document.getElementById('output').innerHTML = `
+        <div class="result">
+          <b>Loan Amount:</b> ₱${formatNumber(P.toFixed(2))}
+        </div>
+        ${table}
+      `;
+    }
+  </script>
+</body>
+</html>
