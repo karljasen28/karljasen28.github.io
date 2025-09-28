@@ -33,14 +33,35 @@
       font-weight: bold;
       font-size: 1rem;
     }
+    .input-wrapper {
+      position: relative;
+      width: 100%;
+    }
     input {
       width: 100%;
-      padding: 12px;
+      padding: 12px 40px 12px 12px; /* space for X button */
       margin-top: 5px;
       border-radius: 6px;
       border: 1px solid #ccc;
       font-size: 16px;
       box-sizing: border-box;
+    }
+    .clear-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #ddd;
+      color: #2a363d;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      display: none; /* hidden by default */
     }
     button {
       margin-top: 15px;
@@ -66,26 +87,29 @@
     }
     .table-container {
       margin-top: 20px;
-      overflow-x: auto; /* allow horizontal scroll */
-      -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 600px; /* keeps columns readable, forces scroll on small screens */
+      min-width: 600px;
     }
     th, td {
       border: 1px solid #ddd;
       padding: 12px;
       text-align: center;
       font-size: 15px;
-      white-space: nowrap; /* no wrapping */
+      white-space: nowrap;
     }
     th {
-      background: #e7f0f3;
+        background-color: #2a363d;
+        color: #ffffff;
+    }
+    tr:nth-child(even) {
+      background: #e9ecef; /* darker grey */
     }
 
-    /* Slightly smaller text on tablets */
     @media (max-width: 768px) {
       h1 {
         font-size: 1.6rem;
@@ -96,7 +120,6 @@
       }
     }
 
-    /* More compact on phones */
     @media (max-width: 480px) {
       h1 {
         font-size: 1.4rem;
@@ -112,7 +135,10 @@
   <h1>🦈 Karl The Loan Shark 🦈</h1>
   <div class="container">
     <label for="amount">Loan Amount (₱)</label>
-    <input type="text" id="amount" placeholder="Enter loan amount..." inputmode="numeric">
+    <div class="input-wrapper">
+      <input type="text" id="amount" placeholder="Enter loan amount..." inputmode="numeric">
+      <div class="clear-btn" id="clearBtn">&times;</div>
+    </div>
 
     <button onclick="calculate()">Calculate</button>
 
@@ -120,28 +146,31 @@
   </div>
 
   <script>
-    // backend adjustable monthly interest rate
     const monthlyRate = 0.03; // 3%
+    const amountInput = document.getElementById('amount');
+    const clearBtn = document.getElementById('clearBtn');
 
-    // format number with commas
     function formatNumber(num) {
       return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-
-    // remove commas from input
     function parseNumber(str) {
       return parseFloat(str.replace(/,/g, "")) || 0;
     }
 
-    // auto-format input with commas
-    const amountInput = document.getElementById('amount');
     amountInput.addEventListener('input', () => {
       let raw = parseNumber(amountInput.value);
       amountInput.value = raw ? formatNumber(raw) : "";
+      clearBtn.style.display = amountInput.value ? "flex" : "none";
+    });
+
+    clearBtn.addEventListener('click', () => {
+      amountInput.value = "";
+      clearBtn.style.display = "none";
+      document.getElementById('output').innerHTML = "";
     });
 
     function calculate() {
-      let P = parseNumber(document.getElementById('amount').value);
+      let P = parseNumber(amountInput.value);
       if (!P) {
         document.getElementById('output').innerHTML = `<div class="result">Enter a valid loan amount.</div>`;
         return;
